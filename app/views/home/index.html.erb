@@ -2,4 +2,5 @@
 
 <% if @user %>
     Hello <%= @user.email %>
+    <%= button_to "Sign out", signout_path, method: :delete %>
 <% end %>
