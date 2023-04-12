@@ -8,3 +8,8 @@
     <%= flash[:alert] %>
     </div>
 <% end %>
+<% if flash[:notice]  %> <!-- Checking if there is any message -->
+    <div class="alert alert-primary" role="alert">
+    <%= flash[:notice] %>
+    </div>
+<% end %>
