@@ -16,6 +16,12 @@ Rails.application.routes.draw do
   get "password", to:"passwords#edit";
   patch "password", to: "passwords#update";
 
+  get "password_reset", to: "password_resets#new"
+  post "password_reset", to: "password_resets#create"
+
+  get "password_reset/edit", to: "password_resets#edit"
+  patch "password_reset/edit", to: "password_resets#update"
+  
   # Defines the root path route ("/")
   # root "articles#index"
 
