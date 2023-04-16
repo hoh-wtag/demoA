@@ -13,6 +13,9 @@ Rails.application.routes.draw do
 
   delete "signout", to: "sessions#destroy";
 
+  get "password", to:"passwords#edit";
+  patch "password", to: "passwords#update";
+
   # Defines the root path route ("/")
   # root "articles#index"
 

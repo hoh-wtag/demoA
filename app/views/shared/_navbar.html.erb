@@ -17,8 +17,9 @@
       <div class="d-flex" >
 
         <% if Current.user %>
-          <div class="navbar-text">Hello <%= Current.user.email %></div>
-          <%= button_to "Sign out", signout_path, method: :delete, class:"btn btn-primary ms-2 me-2" %>
+          <div class="navbar-text me-4">Hello <%= Current.user.email %></div>
+          <%= link_to "Edit Password", password_path, class:"navbar-text nav-link me-4" %>
+          <%= button_to "Sign out", signout_path, method: :delete, class:"btn btn-primary me-2" %>
         <% else %>
           <%= link_to "Sign up", signup_path, class:"btn btn-primary me-2" %>
           <%= link_to "Sign in", signin_path, class:"btn btn-primary me-2" %>
