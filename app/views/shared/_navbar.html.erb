@@ -17,7 +17,7 @@
       <div class="d-flex" >
 
         <% current_user %>
-        <% if @user && @user.email!="" %>
+        <% if session[:user_id] %>
           Hello <%= @user.email %>
           <%= button_to "Sign out", signout_path, method: :delete, class:"ms-2 me-2" %>
         <% else %>

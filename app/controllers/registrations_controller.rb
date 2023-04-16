@@ -1,7 +1,6 @@
 class RegistrationsController < ApplicationController
     def new
         @user = User.new
-        @user.email=""
     end
 
     def create
