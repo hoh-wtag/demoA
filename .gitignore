@@ -31,4 +31,4 @@
 /config/master.key
 
 # Ignore Environment variable
-.envßß
+.env
